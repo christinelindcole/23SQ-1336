@@ -1,0 +1,797 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title>Section 8.3 - Part 1: Integral Test </title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="23SQ-Math-1336-Ch8s3-Part1-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<div class="maketitle">
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+
+<h2 class="titleHead">Section 8.3 - Part 1: Integral Test </h2>
+<div class="author" ></div>
+<br />
+<div class="date" ></div>
+</div>
+<!--l. 60--><p class="noindent" >
+<a 
+ id="Q1-1-1"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Section 8.3 - Tests for Series with POSITIVE Terms: </h3>
+<!--l. 67--><p class="noindent" ><span 
+class="cmssbx-10">The tests that we will develop in this section can only be applied to series with POSITIVE terms:</span>
+<!--l. 67--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></mrow></math><br 
+class="newline" /><!--l. 68--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">⇒</mo></mrow></math> verifying and
+stating that <!--l. 68--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></mrow></math>
+is an important part of the argument when using these tests!<br 
+class="newline" /> <a 
+ id="Q1-1-3"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Key Idea:</h4>
+<!--l. 73--><p class="noindent" >Knowing that <!--l. 73--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></mrow></math> means that the
+sequence of partial sums, <!--l. 73--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">{</mo><mrow><msub><mrow 
+><mi 
+>s</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">}</mo></mrow></mrow></math>,
+is <span 
+class="cmssi-10">increasing</span>.<br 
+class="newline" />If we can also show that <!--l. 74--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">{</mo><mrow><msub><mrow 
+><mi 
+>s</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></mrow><mo 
+class="MathClass-close">}</mo></mrow></mrow></math>
+is <span 
+class="cmssi-10">bounded</span>, then by the <span 
+class="cmssbx-10">MST</span>, it must converge. <br 
+class="newline" />
+</p><!--l. 76--><p class="noindent" >We just need ways to ﬁnd an upper bound!<br 
+class="newline" />
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-3000"></a>p-Series:</h4>
+<!--l. 83--><p class="noindent" >The <span 
+class="cmssbx-10">p-series </span><!--l. 83--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mi 
+>p</mi></mrow></msup 
+></mrow></mfrac></mrow></math>
+is<br 
+class="newline" /></p>
+     <ul class="itemize1">
+     <li class="itemize">convergent if <!--l. 85--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>p</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>1</mn></mrow></math>
+                                                                                         
+                                                                                         
+     </li>
+     <li class="itemize">divergent if <!--l. 86--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>p</mi> <mo 
+class="MathClass-rel">≤</mo> <mn>1</mn></mrow></math></li></ul>
+<a 
+ id="Q1-1-7"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-4000"></a>The Integral Test:</h4>
+<!--l. 96--><p class="noindent" >Suppose <!--l. 96--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math> is a continuous,
+positive, decreasing function on <!--l. 96--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mi 
+>∞</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+and let <!--l. 96--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>.<br 
+class="newline" />Then the series <!--l. 97--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+></mrow></math> is convergent
+if-and-only-if the improper integral <!--l. 97--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi></mrow></math>
+is convergent:
+    </p><dl class="enumerate"><dt class="enumerate">
+ (i) </dt><dd 
+class="enumerate">If <!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi></mrow></math>
+    is convergent, then <!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+></mrow></math>
+    is convergent.
+    </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate">If <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi></mrow></math>
+    is divergent, then <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+></mrow></math>
+    is divergent.</dd></dl>
+<a 
+ id="Q1-1-9"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-5000"></a>Integral Test Examples:</h3>
+     <dl class="enumerate"><dt class="enumerate">
+  1. </dt><dd 
+class="enumerate">Use an area argument, referencing the ﬁgure shown below, to convince yourself that
+<div class="math-display"><!--l. 119--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                 <mn>1</mn> <mo 
+class="MathClass-bin">+</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac>  <mo 
+class="MathClass-rel">&#x003E;</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac>
+</mrow></math></div>
+     <!--l. 121--><p class="nopar" >
+</p>
+     <hr class="figure" /><div class="figure" 
+> <img 
+src="23SQ-Math-1336-Ch8s3-Part1-ws-figure0.png" alt="PIC"  
+ />
+     </div><hr class="endfigure" />
+     <!--l. 153--><p class="noindent" >Now show that the improper integral <!--l. 153--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> </mrow></math>
+     converges, and by the Integral Test, so does <!--l. 153--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac></mrow></math>.<br 
+class="newline" />
+                                                                                         
+                                                                                         
+     </p></dd><dt class="enumerate">
+  2. </dt><dd 
+class="enumerate">Use an area argument, referencing the ﬁgure shown below, to convince yourself that
+<div class="math-display"><!--l. 158--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                  <mn>1</mn> <mo 
+class="MathClass-bin">+</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+ <mrow 
+><mi 
+>x</mi></mrow></mfrac>  <mo 
+class="MathClass-rel">&#x003E;</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mi 
+>n</mi></mrow></mfrac>
+</mrow></math></div>
+     <!--l. 160--><p class="nopar" >
+</p>
+     <hr class="figure" /><div class="figure" 
+> <img 
+src="23SQ-Math-1336-Ch8s3-Part1-ws-figure1.png" alt="PIC"  
+ />
+     </div><hr class="endfigure" />
+     <!--l. 191--><p class="noindent" >In one of the pre-class videos, we discovered that the Harmonic Series,
+     <!--l. 191--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mi 
+>n</mi></mrow></mfrac></mrow></math>, diverges
+     to <!--l. 191--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>∞</mi></mrow></math>.<br 
+class="newline" />Use this fact to argue that <!--l. 192--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+ <mrow 
+><mi 
+>x</mi></mrow></mfrac> </mrow></math>
+     must also diverge.<br 
+class="newline" />
+</p>
+     </dd></dl>
+<a 
+ id="Q1-1-11"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-6000"></a>Problems for Group Work:</h3>
+<!--l. 201--><p class="noindent" ><span 
+class="cmssbx-10">Be sure to fully justify your reasoning as a part of your solutions.</span><br 
+class="newline" />The answers are upside-down on the bottom of this page.
+     </p><dl class="enumerate"><dt class="enumerate">
+  1. </dt><dd 
+class="enumerate">Determine the convergence/divergence of the following p-series:
+<a 
+ id="x1-60010"></a>
+         <dl class="enumerate"><dt class="enumerate">
+      (a) </dt><dd 
+class="enumerate"><!--l. 210--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" /><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mrow></mfrac></mrow></math>
+         </dd><dt class="enumerate">
+      (b) </dt><dd 
+class="enumerate"><!--l. 212--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" /><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>1</mn></mrow></msup 
+></mrow></mfrac></mrow></math>
+         <a 
+ id="x1-60032"></a>
+         </dd><dt class="enumerate">
+      (c) </dt><dd 
+class="enumerate"><!--l. 214--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" /><mspace width="1em" class="nbsp" />  <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>1</mn><mo 
+class="MathClass-punc">.</mo><mn>0</mn><mn>0</mn><mn>0</mn><mn>0</mn><mn>1</mn></mrow></msup 
+></mrow></mfrac></mrow></math>
+         <a 
+ id="x1-60043"></a></dd></dl>
+     </dd><dt class="enumerate">
+  2. </dt><dd 
+class="enumerate">If the improper integral <!--l. 223--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>5</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>p</mi></mrow></msup 
+></mrow></mfrac></mrow></math>
+     converges, which of the following series <span class="underline">must</span> converge?<a 
+ id="x1-60052"></a>
+                                                                                         
+                                                                                         
+        <dl class="enumerate"><dt class="enumerate">
+     A) </dt><dd 
+class="enumerate"><!--l. 226--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mi 
+>p</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msup 
+></mrow></mfrac></mrow></math>
+        </dd><dt class="enumerate">
+     B) </dt><dd 
+class="enumerate"><!--l. 228--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>5</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mi 
+>p</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msup 
+></mrow></mfrac></mrow></math>
+        </dd><dt class="enumerate">
+     C) </dt><dd 
+class="enumerate"><!--l. 230--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mi 
+>p</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+></mrow></mfrac></mrow></math>
+        </dd><dt class="enumerate">
+     D) </dt><dd 
+class="enumerate"><!--l. 232--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>5</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" /> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mi 
+>p</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+></mrow></mfrac></mrow></math>
+        </dd><dt class="enumerate">
+     E) </dt><dd 
+class="enumerate">Both A and B
+        </dd><dt class="enumerate">
+     F) </dt><dd 
+class="enumerate">Both C and D
+        </dd></dl>
+     </dd><dt class="enumerate">
+  3. </dt><dd 
+class="enumerate">Determine the convergence/divergence of the following series using the tools we currently have: <a 
+ id="x1-60123"></a>
+       <dl class="enumerate"><dt class="enumerate">
+     a) </dt><dd 
+class="enumerate"><!--l. 256--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" /><mfenced separators="" 
+open="["  close="]" ><mrow>   <mfrac><mrow 
+><mn>5</mn></mrow>
+<mrow 
+><mi 
+>n</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfrac> <mo 
+class="MathClass-bin">−</mo><msup><mrow 
+><mfenced separators="" 
+open="("  close=")" ><mrow><mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mn>2</mn></mrow></mfrac></mrow></mfenced></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></mfenced></mrow></math>
+       </dd><dt class="enumerate">
+     b) </dt><dd 
+class="enumerate"><!--l. 258--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>2</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mspace width="1em" class="nbsp" />   <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mi 
+>n</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo class="qopname">ln</mo><!--nolimits--><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>p</mi></mrow></msup 
+></mrow></mfrac></mrow></math>
+       </dd></dl>
+     </dd></dl>
+<a 
+ id="Q1-1-13"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-7000"></a>Answers:</h4>
+<!--l. 272--><p class="noindent" ><span 
+class="cmssbx-10">Problem </span><a 
+href="#x1-60010"><span 
+class="cmssbx-10">1</span><!--tex4ht:ref: first --></a><span 
+class="cmssbx-10">: </span>a) Converge, b) Diverge, c) Converge <span 
+class="cmssbx-10">Problem </span><a 
+href="#x1-60052"><span 
+class="cmssbx-10">2</span><!--tex4ht:ref: prob4 --></a><span 
+class="cmssbx-10">: </span>E,<br 
+class="newline" /><span 
+class="cmssbx-10">Problem </span><a 
+href="#x1-60123"><span 
+class="cmssbx-10">3</span><!--tex4ht:ref: prob3 --></a><span 
+class="cmssbx-10">: </span>a) Converge, b) Converge if <!--l. 274--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>p</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>1</mn></mrow></math>,
+Diverge if <!--l. 274--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>p</mi> <mo 
+class="MathClass-rel">≤</mo> <mn>1</mn></mrow></math>
+</p>
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+
