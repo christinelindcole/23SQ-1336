@@ -1,0 +1,170 @@
+% Instructions to change to html version:
+% Comment out:
+%  minipage, multicols,columnbreak, mathbf, hrule
+% Replace \$$ with \[ and $ with \(
+% Enclose graphics in figure environments and add captions
+% Re-tag \df environments as sections, subsections, etc.
+% Command Line Code to Create html version:
+%First: pdflatex -shell-escape filename.tex                                   
+%Second, for each figure: inkscape "filename-figure1.pdf" -o "filename-figure1.png"
+% Third: htlatex filename.tex "ht5mjlatex.cfg, charset=utf-8" " -cunihtf -utf8"
+
+\documentclass[10pt]{article}
+
+%\usepackage{tikz, pgf,pgfplots,wasysym,array}
+%\usepackage{wasysym,array}
+
+\usepackage{amsmath,amssymb}
+
+\ifdefined\HCode
+  \def\pgfsysdriver{pgfsys-tex4ht-updated.def}
+\fi 
+%\ifdefined\HCode
+%  \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
+%\fi 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.3}
+\usepackage{myexternalize}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{framed}
+\usepackage[none]{hyphenat}
+
+\input{../../../common/1336_header_test.tex}
+\begin{document}
+
+\newcommand{\an}{\lbrace a_n \rbrace}
+\newcommand{\Sum}{\displaystyle \sum_{n=1}^\infty }
+
+\everymath{\displaystyle}
+%\vspace*{-.25in}
+\renewcommand{\myTitle}{	MATH 1336: Calculus III}
+
+\renewcommand{\mySubTitle}{Section 8.3, Part 2: Comparison Tests}% \vspace*{-.25in}}
+%~\hfill Name: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+
+\lectTitle{\vspace*{-.25in}\myTitle}{\vspace*{.1in}\mySubTitle \vspace*{-.2in}}
+
+
+\hspace*{-.8in}%\begin{minipage}{1.25\textwidth}
+
+\setlength{\columnseprule}{.4pt}
+\setlength{\columnsep}{3em}
+
+%\begin{framed}
+\section*{Section 8.3 - Tests for Series with POSITIVE Terms: }
+\textbf{The tests that we will develop in this section can only be applied to series with \textit{POSITIVE} terms: \(a_n >0\)}\\
+\(\Rightarrow\)  verifying and stating that \(a_n >0\) is an important part of the argument when using these tests!\\
+%\hrule
+\vspace*{.1in}
+
+%\begin{multicols}{2}
+
+
+\subsection*{Comparison Test:}
+Given that \(\sum a_n\) and \(\sum b_n\) are series with \textbf{positive} terms, then we have the following:
+\begin{enumerate}[(i)]
+\item If \(\sum b_n\) is convergent and \(a_n < b_n\) for all \(n\),\\ then \(\sum a_n\) is also convergent.
+\item If \(\sum b_n\) is divergent and \(b_n < a_n\) for all \(n\),\\ then \(\sum a_n\) is also divergent.
+\end{enumerate}
+
+%\columnbreak
+
+\subsection*{Limit Comparison Test:}
+Given that \(\sum a_n\) and \(\sum b_n\) are series with \textbf{positive} terms, if:
+\[
+\lim_{n\rightarrow \infty} \frac{a_n}{b_n} = c,
+\]
+where \(c>0\) is \textbf{finite}, then either the series \textbf{both converge} or they \textbf{both diverge}.
+
+
+%\end{multicols}
+
+%\hrule
+\vspace*{.2in}
+\setlength{\columnseprule}{0pt}
+\setlength{\columnsep}{1em}
+
+\subsection*{Note 1:}
+Both tests rely on comparison with series for which we already know the convergence behavior:
+%\begin{multicols}{4}
+\begin{itemize}
+\item Geometric Series
+\item Harmonic Series
+\item p-Series
+\item Series we can test another way...
+\end{itemize}
+%\end{multicols}
+
+\subsection*{Note 2:}
+We don't \textit{always} have to start with \(n=1\). Convergence is really about the tails, or end behavior, of the sequence.\\ If we can find a comparison that only holds for \(n>500\), for example, the tests still work!
+
+%\end{framed}
+
+%\end{minipage}
+
+\section*{Examples:}
+We will work through the following examples together.
+
+\textbf{Do the series listed below converge, diverge, or are we unable to determine the convergence behavior given the tools that we have?}
+
+\begin{enumerate}[{Example }1:]
+
+\addtocounter{enumi}{1}
+
+
+\item \(\qquad \sum_{n=2}^\infty \frac{1}{\sqrt{n}-1}\) \vfill
+
+\item \(\qquad \sum_{n=1}^\infty \frac{1}{n!}\) \vfill
+
+\item \(\qquad \sum_{n=1}^\infty \frac{1}{3^n-1}\) \vfill
+
+
+\end{enumerate}
+
+\section*{Problems for Group Work:}
+\textbf{Be sure to fully justify your reasoning as a part of your solutions.}\\
+ The answers are upside-down on the bottom of this page.
+
+%\begin{framed}
+For Problems \ref{prob1}-\ref{prob4}, use either the Comparison Test or the Limit Comparison Test to determine whether the series is convergent or divergent. If neither of the tests can be used, explain why.
+%\end{framed}
+
+%%\begin{multicols}{2}
+\begin{enumerate}[{Problem }1:]
+
+\item \(\qquad \Sum \frac{1}{\sqrt{n}\ 3^n}\) \label{prob1}
+%Converge
+\vfill
+
+\item \(\qquad\Sum \frac{1}{\sqrt[3]{n}+1}\) \label{prob2}
+%Diverge
+\vfill
+
+\item \(\qquad\Sum \frac{\sin(n)}{n^2}\) \label{prob3}
+%Cannot Determine
+\vfill
+
+\item \(\qquad\Sum \frac{1}{5^n +300}\) \label{prob4}
+%Converge
+\vfill
+
+\end{enumerate}
+%%\end{multicols}
+%\vfill
+
+%\rotatebox{180}{
+%\begin{minipage}{\textwidth}
+\subsection*{Answers:}
+\textbf{Problem \ref{prob1}:} Converge, 
+\textbf{Problem \ref{prob2}:} Diverge, 
+\textbf{Problem \ref{prob3}:} Cannot Determine, 
+\textbf{Problem \ref{prob4}:} Converge\\
+
+%\end{minipage}
+%}
+
+\end{document}
