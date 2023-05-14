@@ -1,0 +1,26 @@
+% !tex root = ./exam_2.tex
+\usepackage[nomessages]{fp}% 
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{sectsty}
+\usepackage{xparse}
+\usepackage{tikz}
+\usepackage{pgf,pgfplots}
+	% For the histogram ?
+	\pgfdeclarelayer{background}% determine background layer
+	\pgfsetlayers{main,background}% order of layers
+
+\usepackage{tkz-berge}
+\usetikzlibrary{calc,graphs,arrows,backgrounds,decorations.pathreplacing}
+%Not found:\usetikzlibrary{graphs.standard,quotes}
+\usetikzlibrary{shapes}
+		\tikzset{
+		  dot hidden/.style={},
+		  line hidden/.style={},
+		  dot colour/.style={dot hidden/.append style={color=#1}},
+		  dot colour/.default=black,
+		  line colour/.style={line hidden/.append style={color=#1}},
+		  line colour/.default=black
+		}
+\NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
+
