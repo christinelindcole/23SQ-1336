@@ -1,0 +1,178 @@
+% Instructions to change to html version:
+% Comment out:
+%  minipage, multicols,columnbreak, mathbf, hrule
+% Replace \\] with \[ and \) with \(
+% Enclose graphics in figure environments and add captions
+% Re-tag \df environments as sections, subsections, etc.
+% Command Line Code to Create html version:
+%First: pdflatex -shell-escape filename.tex                                   
+%Second, for each figure: inkscape "filename-figure1.pdf" -o "filename-figure1.png"
+% Third: htlatex filename.tex "ht5mjlatex.cfg, charset=utf-8" " -cunihtf -utf8"
+
+\documentclass[10pt]{article}
+
+%\usepackage{tikz, pgf,pgfplots,wasysym,array}
+%\usepackage{wasysym,array}
+
+\usepackage{amsmath,amssymb}
+
+\ifdefined\HCode
+  \def\pgfsysdriver{pgfsys-tex4ht-updated.def}
+\fi 
+%\ifdefined\HCode
+%  \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
+%\fi 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.12}
+\usepackage{myexternalize}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{framed}
+\usepackage[none]{hyphenat}
+
+\input{../../../common/1336_header_test.tex}
+% \input{header.tex}
+
+\usepackage{multirow, array}
+
+\begin{document}
+
+\graphicspath{{Series_Strategies/}}
+
+\newcommand{\an}{\lbrace a_n \rbrace}
+\newcommand{\Sum}{\sum_{n=1}^\infty }
+\newcommand{\Sumzero}{\sum_{n=0}^\infty }
+
+\everymath{\displaystyle}
+
+\renewcommand{\myTitle}{	MATH 1336: Calculus III}
+
+\renewcommand{\mySubTitle}{Chapter 8 Missing Section: Strategies for Testing Series}% \vspace*{-.25in}}
+%~\hfill Name: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\lectTitle{\vspace*{-.5in}\myTitle}{\vspace*{.1in}\mySubTitle \vspace*{-.2in}}
+
+%\section*{Problems for Group Work}
+
+
+%
+%\begin{enumerate}
+%\begin{multicols}{2}
+%
+%\item $\Sum \frac{n-1}{2n+1}$\vspace*{.25in}
+%
+%\item $\Sum \frac{\sqrt{n^3+1}}{3n^3+4n^2+2}$\vspace*{.25in}
+%
+%\item $\Sum ne^{-n^2}$\vspace*{.25in}
+%
+%\item $\Sum (-1)^{n}\frac{n^3}{n^4+1}$\vspace*{.25in}
+%
+%\item $\Sum \frac{2^k}{k!}$\vspace*{.25in}
+%
+%\item $\Sum \frac{1}{2+3^n}$\vspace*{.25in}
+%\end{multicols}
+
+
+
+\section*{Series For Practice}
+Test several of the series listed below for convergence or divergence.  \\
+Start with Problems 1-8, then pick other series from the list that interest you.
+%\begin{multicols}{3}
+\begin{enumerate}
+%\item \(\quad \Sum \frac{•}{•}\)
+
+\item \(\quad \Sum \frac{n^2-1}{n^2+n}\)
+
+\item \(\quad \Sum \frac{n-1}{n^2+n}\)
+
+\item \(\quad \Sum \frac{1}{n^2+n}\)
+
+\item \(\quad \Sum (-1)^{n-1}\frac{n-1}{n^2+n}\)
+
+\item \(\quad \Sum \frac{(-3)^{n+1}}{2^{3n}}\)
+
+\item \(\quad \Sum \frac{1}{n+n \cos^2 n}\)
+
+\item \(\quad \sum_{n=2}^\infty \frac{1}{n\sqrt{\ln n}}\)
+
+\item \(\quad \sum_{k=1}^\infty \frac{2^k k!}{(k+2)!}\)
+
+\item \(\quad \sum_{k=1}^\infty k^2 e^{-k}\)
+
+\item \(\quad \sum_{n=1}^\infty n^2 e^{-n^3}\)
+
+\item \(\quad \sum_{n=2}^\infty \frac{(-1)^{n+1}}{n \ln n}\)
+
+\item \(\quad \Sum (-1)^n \frac{n}{n^2+25}\)
+
+\item \(\quad \Sum \frac{3^n n^2}{n!}\)
+
+\item \(\quad \Sum \sin n\)
+
+\item \(\quad \Sumzero \frac{n!}{2\cdot5\cdot8\cdot \cdots \cdot(3n+2)}\)
+
+\item \(\quad \Sum \frac{n^2+1}{n^3+1}\)
+
+\item \(\quad \Sum (-1)^n 2^{1/n}\)
+
+\item \(\quad \sum_{n=2}^\infty \frac{(-1)^{n-1}}{\sqrt{n}-1}\)
+
+\item \(\quad \Sum (-1)^n\frac{\ln n}{\sqrt{n}}\)
+
+\item \(\quad \sum_{k=1}^\infty \frac{k+5}{5^k}\)
+
+%21
+
+\item \(\quad \Sum \frac{(-2)^{2n}}{n^n}\)
+
+\item \(\quad \Sum \frac{\sqrt{n^2-1}}{n^3+2n^2+5}\)
+
+\item \(\quad \Sum \tan(1/n)\)
+
+\item \(\quad \Sum \frac{\cos(n/2)}{n^2+4n}\)
+
+\item \(\quad \Sum \frac{n!}{e^{n^2}}\)
+
+\item \(\quad \Sum \frac{n^2+1}{5^n}\)
+
+
+%27
+
+\item \(\quad \sum_{k=1}^\infty \frac{k \ln k}{(k+1)^3}\)
+
+\item \(\quad \Sum \frac{e^{1/n}}{n^2}\)
+
+\item \(\quad \Sum \frac{\tan^{-1} n}{n\sqrt{n}}\)
+
+\item \(\quad \sum_{j=1}^\infty (-1)^j \frac{\sqrt{j}}{j+5}\)
+
+\item \(\quad \sum_{k=1}^\infty \frac{5^k}{3^k + 4^k}\)
+
+\item \(\quad \sum_{n=2}^\infty \frac{1}{(\ln n)^{\ln n}}\)
+
+\item \(\quad \Sum \frac{\sin(1/n)}{\sqrt{n}}\)
+
+\item \(\quad \Sum ( \sqrt[n]{2} - 1 )\)
+
+\end{enumerate}
+
+%\end{multicols}
+
+%\includegraphics[width=\textwidth]{Stewart_Probs}
+
+Solutions are posted on the Chapter 8 Objectives \& Problems page on  Canvas.\\
+% (Don't bother clicking in the blue boxes, they won't work.)
+
+%\end{enumerate}
+
+\pagebreak
+
+\input{../Series_Strategies/convergence_test_summary}
+
+%\pagebreak
+
+
+
+\end{document}
