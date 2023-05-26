@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  25 MAY 2023 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  25 MAY 2023 21:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
 \HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode ht5mjlatex.cfg, charset=utf
--8.a.b.c.\input  23SQ-Math-1336-Ch8s5-wsh.tex
-(./23SQ-Math-1336-Ch8s5-wsh.tex
+-8.a.b.c.\input  23SQ-Math-1336-Ch8s5s6-wsh.tex
+(./23SQ-Math-1336-Ch8s5s6-wsh.tex
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
@@ -1062,15 +1062,15 @@ layer'
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2008-10-27-17:23
 
---- needs --- tex4ht 23SQ-Math-1336-Ch8s5-wsh ---
+--- needs --- tex4ht 23SQ-Math-1336-Ch8s5s6-wsh ---
 \tmp:cnt=\count189
-\openout15 = `23SQ-Math-1336-Ch8s5-wsh.tmp'.
+\openout15 = `23SQ-Math-1336-Ch8s5s6-wsh.tmp'.
 
-(./23SQ-Math-1336-Ch8s5-wsh.tmp)
+(./23SQ-Math-1336-Ch8s5s6-wsh.tmp)
 \tmp:dim=\skip136
- (./23SQ-Math-1336-Ch8s5-wsh.xref)
+ (./23SQ-Math-1336-Ch8s5s6-wsh.xref)
 \:refout=\write6
-\openout6 = `23SQ-Math-1336-Ch8s5-wsh.xref'.
+\openout6 = `23SQ-Math-1336-Ch8s5s6-wsh.xref'.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1173,10 +1173,10 @@ version 2014-06-27-08:16
 --- Note --- for linear crosslinks of pages, use the command line option `next'
 
 --------------------------------------
-\openout15 = `23SQ-Math-1336-Ch8s5-wsh.4ct'.
+\openout15 = `23SQ-Math-1336-Ch8s5s6-wsh.4ct'.
 
 \:tocout=\write7
-\openout7 = `23SQ-Math-1336-Ch8s5-wsh.4tc'.
+\openout7 = `23SQ-Math-1336-Ch8s5s6-wsh.4tc'.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1696,8 +1696,8 @@ version 2015-02-13-16:39
 version 2014-06-27-08:16
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
-(./23SQ-Math-1336-Ch8s5-wsh.aux)
-\openout1 = `23SQ-Math-1336-Ch8s5-wsh.aux'.
+(./23SQ-Math-1336-Ch8s5s6-wsh.aux)
+\openout1 = `23SQ-Math-1336-Ch8s5s6-wsh.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -1750,45 +1750,38 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.12}).
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box95
---- file 23SQ-Math-1336-Ch8s5-wsh.css ---
+--- file 23SQ-Math-1336-Ch8s5s6-wsh.css ---
 ) [1] [2]
 
 LaTeX Warning: No \author given.
 
-LaTeX Font Info:    Try loading font information for OT1+lmvtt on input line 63
+LaTeX Font Info:    Try loading font information for OT1+lmvtt on input line 70
 .
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/ot1lmvtt.fd
 File: ot1lmvtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 73.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 73.
-
+) [3]
+l.109 --- TeX4ht warning --- missing \Configure{HColor}{sgreen}{...} (in LaTeX:
+ rgb 0.42354 0.70197 0.24707) ---
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 115
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 115.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 73.
+(Font)              for symbol `textbullet' on input line 115.
 
-[3]
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 85.
-
-l.103 --- TeX4ht warning --- Cannot determine size of graphic in Ch8s5-Power-Se
-ries-Interval.png (no BoundingBox) ---
-l. 103 --- needs --- Ch8s5-Power-Series-Interval.png ---
-[4] [5] [6] [7] (./23SQ-Math-1336-Ch8s5-wsh.aux)
+[4] [5] [6] [7] (./23SQ-Math-1336-Ch8s5s6-wsh.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 35840 strings out of 493090
- 804227 string characters out of 6134868
- 1043263 words of memory out of 5000000
- 38429 multiletter control sequences out of 15000+600000
- 17245 words of font info for 55 fonts, out of 8000000 for 9000
+ 35836 strings out of 493090
+ 804193 string characters out of 6134868
+ 1046317 words of memory out of 5000000
+ 38428 multiletter control sequences out of 15000+600000
+ 16889 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,83p,10984b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,8n,83p,10986b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 23SQ-Math-1336-Ch8s5-wsh.dvi (264 pages, 98204 bytes).
+Output written on 23SQ-Math-1336-Ch8s5s6-wsh.dvi (264 pages, 95032 bytes).
