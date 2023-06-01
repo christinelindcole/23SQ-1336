@@ -1,0 +1,7 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Taylor/Maclaurin Series Summary:}}{3}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Taylor/Maclaurin Series Summary:}}{3}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Taylor \& Maclaurin Series Practice Problems}}{7}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-4}{Taylor \& Maclaurin Series Practice Problems}}{7}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-2005r1}{}{}}{figure}\relax 
+\par 
