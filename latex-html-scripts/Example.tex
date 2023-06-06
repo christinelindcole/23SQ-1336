@@ -1,0 +1,127 @@
+% Instructions to change printable pdf handouts to html version:
+% Comment out:
+%  minipage, multicols,columnbreak, mathbf, hrule
+% Replace all: \begin{minipage} \end{minipage} \begin{mulicols}  \end{mulicols}  \columnbreak  \begin{framed} \end{framed} \hrule
+% Search for \mathbf
+% (Optional?) Replace $$ with \[ and $ with \(
+% Enclose graphics in figure environments and add captions
+% Re-tag \df environments as sections, subsections, etc.
+% Command Line Code to Create html version:
+%First: pdflatex -shell-escape filename.tex                                   
+%Second: htlatex filename.tex "ht5mjlatex.cfg, charset=utf-8" " -cunihtf -utf8"
+
+%\documentclass[letter]{exam}
+\documentclass[letter]{article}
+\usepackage{enumerate}
+\newcommand{\course}{MATH 1336}
+\newcommand{\quarterYear}{Spring Quarter 2023}
+\newcommand{\examNumber}{Final Exam}
+\newcommand{\version}{A }
+
+
+
+\ifdefined\HCode
+  \def\pgfsysdriver{pgfsys-tex4ht-updated.def}
+\fi 
+%\ifdefined\HCode
+%  \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
+%\fi 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.3}
+\usepackage{myexternalize}
+
+
+\everymath={\displaystyle}
+
+
+\begin{document}
+
+%\hrule
+\subsection*{Graph C}
+
+
+
+Label the graph below with the set of parametric equations that could have produced it.
+%Match the parametric equations with the graphs below. \textbf{Give a reason for your choice.}
+
+%  \begin{multicols}{2}
+  
+
+\vspace*{-.2in}
+  \begin{minipage}{.5\textwidth}
+%\hspace*{-.5in}
+%  \boxed{ C :
+\begin{tikzpicture}
+\begin{axis}[
+	y=.375cm,
+    x=.375cm,
+	axis x line=middle,
+	axis y line = middle,
+	xmin=-6,xmax=6,
+	ymin=-6,ymax=6,
+%    grid=both,
+%    ticks=none,
+%    yticklabels={},
+%    xticklabels={},
+ 	xtick={-6,-4,...,6},
+    ytick={-6,-4,...,6},
+    xlabel=x,
+    ylabel=y,
+    label style={font=\scriptsize},
+    tick label style={font=\scriptsize}
+]
+
+
+
+
+%\addplot[thick,black, domain=0:6.29, smooth, 
+%%decoration = {markings,
+%%    mark = at position .05 with {\arrow[line width=1.2pt]{>}}
+%%  }, postaction = decorate
+%] (2*cos(deg(x))-cos(deg(2*x)),2*sin(deg(x);
+\addplot[thick,black,variable=\t, domain=-6:6,samples=1000,decoration = {markings,
+    mark = at position .6 with {\arrow[line width=1.2pt]{>}}
+  }, postaction = decorate] ({2*cos(deg(t))},{ 2*sin(deg(t))});
+  
+%  \addplot[thick,black,variable=\t, domain=-6:6,samples=1000,decoration = {markings,
+%    mark = at position .6 with {\arrow[line width=1.2pt]{>}}
+%  }, postaction = decorate] ({t + cos(deg(3*t))},{ t - sin(deg(3*t))});
+
+%\addplot+[black,only marks, mark=*, line width=2pt] coordinates{(5,0)(0,5)};
+%\node [above] at (axis cs:  .15,.25) {$D$};
+%\node [above] at (axis cs:  .4,.5) {$C$};
+
+\end{axis}
+%\filldraw[fill=green!20,draw=green!50!black] (1.5cm,0cm) -- (3.75cm,0cm) arc
+%(0:45:3.75cm) -- (1.065cm,1.065cm) arc (45:0:1.5cm) -- cycle;
+%
+%
+
+\end{tikzpicture}
+%}
+
+\end{minipage}
+  
+  Choose from the following options:
+  
+
+  \begin{enumerate}[(I)]
+   \item  $ x = t + \cos(3 t), \quad y = t - \sin(3 t)$\\
+  
+  
+   \item  $x = 2 \cos(t), \quad y = 2 \sin(t)$\\
+   
+   %\noindent Graph I:
+  
+   \item $ x= 4 \cos( t), \quad y =  2\sin(t)$\\
+  
+  % \item $x = \frac{2 \cos(t)}{1+t}, \quad y = \frac{2 \sin(t)}{1+t}$\\
+   
+   %\noindent Graph II:
+  
+  \end{enumerate}
+
+\end{document}
